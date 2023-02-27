@@ -54,11 +54,11 @@
 
                 <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                     <div class="card-body">
-                        <p>Somme : <?= $int1 ?> + <?= $int2 ?> = <?= ($int1 + $int2) ?></p>
-                        <p>Produit : <?= $int1 ?> * <?= $int2 ?> = <?= ($int1 * $int2) ?></p>
-                        <p>Modulo : <?= $int1 ?> % <?= $int2 ?> = <?= ($int1 % $int2) ?></p>
-                        <p>Différence : <?= $int1 ?> - <?= $int2 ?> = <?= ($int1 - $int2) ?></p>
-                        <p>Division : <?= $int1 ?> / <?= $int2 ?> = <?= ($int1 / $int2) ?></p>
+                        <p>Somme : <?= $int1 . ' + ' . $int2 . ' = ' . $int1 + $int2 ?></p>
+                        <p>Produit : <?= $int1 . ' * ' . $int2 . ' = ' . $int1 * $int2 ?></p>
+                        <p>Modulo : <?= $int1 . ' % ' . $int2 . ' = ' . $int1 % $int2 ?></p>
+                        <p>Différence : <?= $int1 . ' - ' . $int2 . ' = ' . $int1 - $int2 ?></p>
+                        <p>Division : <?= $int1 . ' / ' . $int2 . ' = ' . $int1 / $int2 ?></p>
                     </div>
                 </div>
             </div>
@@ -93,57 +93,51 @@
                         <h4>Comparaison de variables</h4>
                         <p>
                             La variable un est supérieure à la variable deux :
-                            <!-- écrire votre code dans le span -->
                             <span class="bg-secondary p-2">
-                                <?php if ($int1 > $int2){ ?>
-                                    <b>Vrai</b>
-                                <?php } else { ?>
-                                    <b>Faux</b>
-                                <?php } ?>
+                                <?= $int1 > $int2 ? 'Vrai' : 'Faux' ?>
                             </span></p>
                         <p>La variable un est strictement supérieure à la variable deux :
-                            <!-- écrire votre code dans le span -->
                             <span class="bg-secondary p-2">
                                 <?php if ($int1 > $int2){ ?>
-                                    <b>Vrai</b>
+                                    Vrai
                                 <?php } else { ?>
-                                    <b>Faux</b>
+                                    Faux
                                 <?php } ?>
                             </span></span>
                         </p>
                         <p>La variable un est égale à la variable deux :
                             <span class="bg-secondary p-2">
                                 <?php if ($int1 == $int2){ ?>
-                                    <b>Vrai</b>
+                                    Vrai
                                 <?php } else { ?>
-                                    <b>Faux</b>
+                                    Faux
                                 <?php } ?>
                             </span>
                         </p>
                         <p>La variable un est strictement égale à la variable deux :
                             <span class="bg-secondary p-2">
                             <?php if ($int1 === $int2){ ?>
-                                    <b>Vrai</b>
+                                    Vrai
                                 <?php } else { ?>
-                                    <b>Faux</b>
+                                    Faux
                                 <?php } ?>
                             </span>
                         </p>
                         <p>La variable un est supérieure ou égale à la variable deux :
                             <span class="bg-secondary p-2">
                                 <?php if ($int1 >= $int2){ ?>
-                                    <b>Vrai</b>
+                                    Vrai
                                 <?php } else { ?>
-                                    <b>Faux</b>
+                                    Faux
                                 <?php } ?>
                             </span>
                         </p>
                         <p>La variable un est inférieure ou strictement égale à la variable deux :
                             <span class="bg-secondary p-2">
                             <?php if ($int1 <= $int2){ ?>
-                                    <b>Vrai</b>
+                                    Vrai
                                 <?php } else { ?>
-                                    <b>Faux</b>
+                                    Faux
                                 <?php } ?>
                             </span>
                         </p>
